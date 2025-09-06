@@ -74,7 +74,21 @@ O código R completo e comentado, bem como o(s) plot(s) estão disponíveís na 
 ### 3. Análise e Respostas
 
 #### Descrição e Análise do Dataset
-O objetivo do dataset é uma tarefa de classificação binária para prever se um passageiro foi transportado (`Transported`). As features incluem dados numéricos (`Age`, despesas) e categóricos (`HomePlanet`, `Destination`). A análise inicial revelou a presença de valores ausentes em múltiplas colunas, tanto numéricas quanto categóricas.
+O objetivo do dataset é uma tarefa de classificação binária para prever se um passageiro foi transportado (`Transported`). As features incluem dados numéricos (`Age`, despesas) e categóricos (`HomePlanet`, `Destination`). 
+
+A análise inicial revelou as colunas que continham valores ausentes bem como a quantidade de dados faltantes. Sendo eles:
+HomePlanet: 201
+CryoSleep: 217
+Destination: 182
+Age: 179
+VIP: 203
+RoomService: 181
+FoodCourt: 183
+ShoppingMall: 208
+Spa: 183
+VRDeck: 188
+Name: 200
+Cabin: 199
 
 #### Justificativa das Etapas de Pré-processamento
 *   **Tratamento de Dados Ausentes:** A imputação pela mediana para dados numéricos foi escolhida devido à alta assimetria das distribuições de despesas, tornando-a mais robusta que a média. A imputação pela moda para dados categóricos é a abordagem padrão para preencher com o valor mais provável.
