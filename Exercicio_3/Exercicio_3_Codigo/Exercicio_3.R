@@ -1,9 +1,7 @@
 #1. 
 
-# Carrega o arquivo train.csv para um data.frame.
 titanic_df <- read.csv("train.csv", na.strings = "")
 
-head(titanic_df) # Exibe as primeiras linhas para uma inspeção inicial.
 
 #2. 
 
@@ -19,7 +17,7 @@ print(missing_values[missing_values > 0])
 
 #3. 
 
-# Cria uma cópia do data.frame original para realizar as modificações.
+# Criação de uma cópia do data.frame original para realizar as modificações.
 processed_df <- titanic_df
 
 #3. 

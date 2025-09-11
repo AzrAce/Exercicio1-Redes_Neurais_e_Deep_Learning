@@ -1,6 +1,6 @@
 #1.
 
-set.seed(42) # Define uma semente para garantir que os resultados sejam reprodutíveis.
+set.seed(42) # Define uma seed para garantir que os resultados sejam reprodutíveis.
 
 n_samples <- 500 # Define o número de amostras para cada classe.
 
@@ -59,7 +59,6 @@ centered_data <- scale(numeric_data, center = TRUE, scale = FALSE)
 cov_matrix <- cov(centered_data)
 
 # c) Calculo dos autovetores e autovalores da matriz de covariância.
-#Os autovetores são os Componentes Principais (direções de maior variância).
 eigen_decomp <- eigen(cov_matrix)
 eigenvectors <- eigen_decomp$vectors
 
@@ -75,7 +74,7 @@ pca_data <- data.frame(
 )
 
 
-# Definição das cores com um canal "alpha" (transparência).
+# Definição das cores com um canal "alpha" visando a transparência.
 colors_alpha <- c("Class A" = "#0000FF80", "Class B" = "#FF000080")
 
 # Criação do gráfico.

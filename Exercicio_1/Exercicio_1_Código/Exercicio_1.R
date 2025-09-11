@@ -1,5 +1,5 @@
 #1. 
-set.seed(42) # Define uma "semente" para que os números aleatórios gerados sejam sempre os mesmos.
+set.seed(42) # Define uma seed para que os números aleatórios gerados sejam sempre os mesmos.
 
 n_samples <- 100 # Define o número de amostras (pontos) para cada uma das quatro classes.
 
@@ -37,11 +37,11 @@ colors <- c("Class 0" = "blue", "Class 1" = "orange", "Class 2" = "forestgreen",
 # A função plot() é usada para configurar a área de plotagem, eixos e títulos.
 plot(
   x = df$x, y = df$y, # Define os dados que serão usados para os eixos X e Y.
-  type = "n", # O tipo "n" cria o gráfico vazio, sem desenhar os pontos ainda.
+  type = "n", # O tipo "n" cria o gráfico, sem ainda desenhar os pontos.
   main = "Dados Gaussianos 2D com Fronteiras de Decisão Lineares", # Título principal do gráfico.
   xlab = "Característica 1 (Eixo X)", # Rótulo do eixo X.
   ylab = "Característica 2 (Eixo Y)", # Rótulo do eixo Y.
-  xlim = c(-2, 18), # Define os limites do eixo X para um melhor enquadramento.
+  xlim = c(-2, 18), # Define os limites do eixo X.
   ylim = c(-5, 12), # Define os limites do eixo Y.
   asp = 1 # Garante que a proporção dos eixos seja 1:1, evitando distorções visuais.
 )
@@ -74,8 +74,8 @@ legend(
   legend = c(names(colors), "Fronteiras Lineares"), # Textos que aparecerão na legenda.
   col = c("black", "black", "black", "black", "black"), # Cor da borda dos pontos e da linha.
   pt.bg = c(colors["Class 0"], colors["Class 1"], colors["Class 2"], colors["Class 3"], NA), # Cor de preenchimento dos pontos.
-  pch = c(21, 21, 21, 21, NA), # Símbolos para cada item (círculo para as classes, nenhum para a fronteira).
-  lty = c(NA, NA, NA, NA, "dashed"), # Estilo de linha (nenhum para as classes, tracejado para a fronteira).
+  pch = c(21, 21, 21, 21, NA), # Símbolos para cada item.
+  lty = c(NA, NA, NA, NA, "dashed"), # Estilo de linha.
   lwd = c(NA, NA, NA, NA, 2.5), # Espessura da linha.
   bty = "o" # Desenha uma caixa ao redor da legenda.
 )
