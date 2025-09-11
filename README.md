@@ -2,10 +2,6 @@
 
 Este repositório contém a resolução do exercício 1.
 
-O projeto foi desenvolvido inteiramente em R, sem o uso de pacotes externos para as funcionalidades principais de machine learning, como PCA ou geração de dados multivariados.
-
----
-
 ## Exercício 1: Dados Gaussianos Sintéticos e Fronteiras de Decisão
 
 ### 1. Abordagem
