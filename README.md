@@ -48,7 +48,7 @@ A projeção 2D do PCA mostra dois clusters elípticos com orientações distint
 #### Análise da Separabilidade Linear e o Desafio para Modelos Simples
 Os dados, conforme visualizados em sua projeção mais informativa, não são linearmente separáveis. Nenhuma linha reta pode separar perfeitamente as duas classes. Um modelo linear simples (como um Perceptron) seria incapaz de alcançar alta acurácia, pois sua fronteira de decisão linear inevitavelmente classificaria incorretamente muitos pontos na zona de sobreposição.
 
-Para classificar esses dados com precisão, seria necessário um modelo mais complexo, como um MLP . Tal rede pode aprender uma fronteira de decisão não-linear, que se ajustaria de forma muito mais eficaz à fronteira complexa entre os dois clusters, resultando em um desempenho de classificação superior.
+Para classificar esses dados com precisão, seria necessário um modelo mais complexo, como um MLP . Tal rede pode aprender uma fronteira de decisão não-linear, que se ajustaria de forma muito mais eficaz à fronteira complexa entre os dois clusters, resultando em um melhor desempenho de classificação.
 
 ---
 
@@ -61,7 +61,7 @@ Este exercício focou no pré-processamento de um dataset real do Kaggle para pr
 2.  Implementar uma estratégia de limpeza de dados:
     *   **Imputação de dados ausentes:** Substituir valores numéricos faltantes pela mediana (devido à assimetria dos dados) e valores categóricos pela moda.
     *   **Codificação de variáveis categóricas:** Aplicar One-Hot Encoding em variáveis como `HomePlanet` e `Destination` e converter variáveis booleanas (`CryoSleep`, `VIP`) para formato numérico (0/1).
-3.  Normalizar todas as features numéricas para o intervalo `[-1, 1]` usando a normalização Min-Max, uma escolha justificada pela natureza da função de ativação `tanh`.
+3.  Normalizar todas as features numéricas para o intervalo `[-1, 1]` usando a normalização Min-Max, em face da natureza da função de ativação `tanh`.
 4.  Criar histogramas comparativos ("antes e depois") para visualizar o impacto da etapa de normalização em features com escalas drasticamente diferentes.
 
 ### 2. Código e Plot(s)
