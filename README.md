@@ -22,7 +22,7 @@ O gráfico de dispersão revela que cada classe forma uma nuvem de pontos elípt
 #### Análise da Separabilidade Linear
 O conjunto de dados não pode ser separado por um único e simples limite linear. É impossível traçar uma única linha reta que separe perfeitamente todas as quatro classes sem cometer erros.
 
-#### Justificativa das Fronteiras de Decisão (Contexto de um Perceptron)
+#### Justificativa das Fronteiras de Decisão 
 Entretanto, foi possível desenhar fronteiras de decisão lineares que representem o que um Perceptron poderia aprender. O sistema em questão treinaria um classificador linear para cada classe. A fronteira final é o resultado da "competição" entre esses classificadores. A linha vertical que isola a Classe 3 é uma fronteira ótima, pois este subproblema é linearmente separável. As linhas que se encontram no centro formam uma partição que busca minimizar os erros na região de sobreposição das Classes 0, 1 e 2, criando regiões de decisão convexas e lineares por partes.
 
 ---
